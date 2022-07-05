@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Dota 2" />
+    <meta name="author" content="Mauricio Donoso C." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="contacto.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="img/dota2-icon.png" />
+    <script type="text/javascript" src="script.js"></script>
+
+    
+
+  </head>
+  <body>
+    <header>
+      <div class="page-header container-fluid">
+        <a href="index.html"><img src="img/dota2-icon.png" alt="" /></a>
+        <h1>DOTA 2</h1>
+        <h3>Defends Of The Ancients</h3>
+      </div>
+    </header>
+    <!-- HEADER -->
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="img/dota2-icon.png" width="50px" alt="">Inicio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            <a class="nav-link" href="index.html">Nosotros</a>
+            <a class="nav-link" href="index.html">Participa</a>
+            <a class="nav-link" href="index.html">Torneos</a>
+            <a class="nav-link" href="index.html">Mejores Jugadas</a>
+            <a class="nav-link" href="contacto.html">Contacto</a>
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR -->
+
+    <br /><br /><br />
+    <section>
+
+        <div class="container borde content w-100">
+            <form action="#" name="formulario" id="formulario">
+            <div class="row g-3">
+                <div class="col-xs-12 col-lg-6">
+                    <h3>Contáctanos</h3><br>
+                      
+                    <!-- Nombre -->
+                      <label for="" >Nombre</label>
+                      <div><input type="text" class="form-control" placeholder="Nombre Completo" name="nombre" id="nombre" required></div> <br>
+
+                    <!-- RUT -->
+                      <label for="" >RUT</label>
+                      <input type="text" class="form-control" placeholder="11.222.333-4" name="rut" id="rut" required><br>
+
+                    <!-- Correo -->
+                      <label for="" class="label-control">Correo Electrónico</label>
+                      <input type="email" class="form-control" placeholder="correo@domio.cl"  name="correo" id="correo" required><br>
+
+                    <!-- Telefono -->
+                      <label for="">Número Telefónico</label>
+                      <input type="text" class="form-control" placeholder="9 5641 2154"  name="telefono" id="telefono" required><br>
+                      
+                    <!-- Comuna -->
+                      <label for="">Comuna</label>
+                      <select class="form-select" name="comuna" id="comuna">
+                        <option value="Seleccionar">Seleccionar</option>
+                                        <option value="Santiago">Santiago</option>
+                                        <option value="Macul">Macul</option>
+                                        <option value="Providencia">Providencia</option>
+                                        <option value="Maipú">Maipú</option>
+                      </select><br>
+
+                    <!-- Fecha -->
+                      <label for="">Fecha</label>
+                      <input type="date" class="form-control"  name="fecha" id="fecha" ><br>
+                    
+
+                    <!-- Asunto -->
+                      <label for="">Asunto</label>
+                      <input type="text" class="form-control" placeholder="Asunto del mensaje"  name="asunto" id="asunto" required><br>
+
+                    <!-- Mensaje -->
+                      <label for="">Mensaje</label>
+                      <textarea name="mensaje" id="mensaje" cols="30" rows="5" class="form-control" placeholder="Max. 500 caracteres"  required></textarea>
+                      <br>
+
+                    <!-- Enviar -->  
+                    
+                      <input type="button" value="Enviar" class="btn btn-danger" onclick="javascript:void(validar())">
+                      <input type="reset" class="btn btn-primary" value="Limpiar">
+                </div>
+                <div class="col-xs-12">
+    
+                </div>
+            </div>
+        </form>
+
+
+
+
+        <div class="contact-info"><br><br>
+            <h4>Más Información</h4>
+            
+                <li> Av. Escuela Agrícola, Macul, Región
+                    Metropolitana <br><br> <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.425254706533!2d-70.61899582225304!3d-33.49031148085669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d006eb6d4865%3A0xa821e7eea1660626!2sInacap%20Santiago%20Sur!5e0!3m2!1ses!2scl!4v1650285574051!5m2!1ses!2scl"
+                        width="250" height="250" style="border:crimson; border-style: solid;"
+                        allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe><br><br>
+                </li>
+                <li>(56) 9 8211 3654</li>
+                <li>contacto@dota2.com</li>
+            <br><br>
+            
+            <p><a href="https://www.dota2.com/"> www.dota2.com</a></p>
+            <p>Dota 2 Todos los derechos reservados.</p>
+            <br><br>
+
+        </div>
+    </div>
+        </div>
+        
+                    
+
+                </div>
+
+        </table>
+
+       
+        </tr>
+
+
+        </table>
+
+
+
+    </section>
+    
+    <br /><br /><br />
+    
+    <footer>
+      <h3>Más sobre DOTA 2</h3>
+
+      <a href="https://www.dota2.com/home" target="_blank"
+        ><img class="RRSS" src="img/unnamed.jpg" width="50" height="50"
+      /></a>
+
+      <a href="https://www.youtube.com/user/dota2" target="_blank"
+        ><img class="RRSS" src="img/yt-icon.png" width="50" height="50"
+      /></a>
+
+      <a href="https://www.youtube.com/watch?v=BnVpyNK4Jkc" target="_blank"
+        ><img class="RRSS" style="border-radius: 50%;" src="img/jugger.png" width="50" height="50"
+      /></a>
+
+      <br /><br /><br />
+      <h5>Correo: dota2@dota2.com</h5>
+      <h5>Teléfono: (+569) 456 325 5775</h5>
+      <br /><br /><br />
+      <h6>Copyright Mauricio Donoso C.</h6>
+      <h6>Analista Programador - INACAP 2022</h6>
+    </footer>
+    <!-- FOOTER -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
+</html>
